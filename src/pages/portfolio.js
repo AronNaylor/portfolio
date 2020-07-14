@@ -1,19 +1,15 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-//import SkillCard from "../components/skillCard";
-//<SkillCard test={"Am I rendering?"} />
-function IndexPage() {
+
+export default function Portfolio() {
   return (
     <Layout>
       <SEO
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
-        title="About"
+        title="Home"
       />
-      <h1>About me</h1>
+      <h1>Portfolio</h1>
     </Layout>
   )
 }
-
-export default IndexPage
