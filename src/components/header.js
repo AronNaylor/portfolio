@@ -9,6 +9,9 @@ function Header() {
       <div className="w-2/3 flex justify-start">
         <nav>
           <Link className="px-2" activeClassName="underline" to="/">
+            Home
+          </Link>{" "}
+          <Link className="px-2" activeClassName="underline" to="/about">
             About
           </Link>{" "}
           <Link className="px-2" activeClassName="underline" to="/portfolio">

@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-//import SkillCard from "../components/skillCard";
-//<SkillCard test={"Am I rendering?"} />
+import SkillCard from "../components/skillCard"
+
 function IndexPage() {
   return (
     <Layout>
@@ -11,7 +11,7 @@ function IndexPage() {
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
         title="About"
       />
-      <h1>About me</h1>
+      <h1>Home</h1>
     </Layout>
   )
 }
