@@ -1,4 +1,26 @@
 import React from "react"
+import { Icon } from "@iconify/react"
+import javascriptIcon from "@iconify/icons-logos/javascript"
+import reactIcon from "@iconify/icons-logos/react"
+import nodejsIcon from "@iconify/icons-logos/nodejs"
+import html5 from "@iconify/icons-logos/html-5"
+import css3 from "@iconify/icons-logos/css-3"
+import pythonIcon from "@iconify/icons-logos/python"
+import graphqlIcon from "@iconify/icons-logos/graphql"
+import npmIcon from "@iconify/icons-logos/npm"
+import bootstrapIcon from "@iconify/icons-logos/bootstrap"
+import jestIcon from "@iconify/icons-logos/jest"
+import mochaIcon from "@iconify/icons-logos/mocha"
+import ionicIcon from "@iconify/icons-logos/ionic"
+import tailwindcssIcon from "@iconify/icons-logos/tailwindcss-icon"
+import sassIcon from "@iconify/icons-logos/sass"
+import materialUi from "@iconify/icons-logos/material-ui"
+import mongodbIcon from "@iconify/icons-logos/mongodb"
+import expressIcon from "@iconify/icons-logos/express"
+import jqueryIcon from "@iconify/icons-logos/jquery"
+import gitIcon from "@iconify/icons-logos/git-icon"
+import apollostackIcon from "@iconify/icons-logos/apollostack"
+import gatsbyIcon from "@iconify/icons-logos/gatsby"
 
 export default function SkillCard(props) {
   const icon = props.icon
@@ -7,67 +29,16 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 40 40"
-            width="48px"
-            height="48px"
-          >
-            <path
-              fill="#4e7ab5"
-              d="M20,28.9C8.598,28.9,0,25.17,0,20s8.598-9,20-9s20,3.83,20,9S31.402,28.9,20,28.9z M20,13.932 c-9.729,0-17.125,3.266-17.125,6.131S10.271,26.068,20,26.068s17.125-3.266,17.125-6.131S29.729,13.932,20,13.932z"
-            />
-            <path
-              fill="#4e7ab5"
-              d="M12.402,38C12.401,38,12.402,38,12.402,38c-0.931,0-1.781-0.216-2.528-0.642 c-1.22-0.697-2.095-1.928-2.532-3.562c-1.146-4.282,0.703-11.482,4.713-18.344C16.76,7.407,23.007,2.003,27.599,2.003 c0.93,0,1.78,0.216,2.527,0.642c1.218,0.695,2.094,1.925,2.531,3.558c1.147,4.282-0.703,11.483-4.715,18.345 C23.241,32.594,16.995,38,12.402,38z M27.599,5.003c-2.888,0-8.409,4.193-12.954,11.963c-4.123,7.056-5.332,12.909-4.404,16.054 c0.251,0.849,0.605,1.438,1.121,1.732c2.361,1.348,8.809-2.85,13.991-11.717c4.125-7.057,5.46-12.785,4.406-16.055 c-0.271-0.841-0.604-1.435-1.119-1.728C28.347,5.084,28.006,5.003,27.599,5.003z"
-            />
-            <path
-              fill="#4e7ab5"
-              d="M27.599,37.997C27.599,37.997,27.599,37.997,27.599,37.997c-4.597-0.001-10.843-5.405-15.544-13.449 c-4.01-6.862-5.859-14.063-4.713-18.344C7.779,4.57,8.654,3.339,9.873,2.643C10.621,2.216,11.471,2,12.4,2 c4.595,0,10.84,5.406,15.542,13.452c4.011,6.861,5.86,14.062,4.714,18.345c-0.438,1.633-1.313,2.863-2.53,3.558 C29.379,37.781,28.528,37.997,27.599,37.997z M12.4,5c-0.407,0-0.747,0.082-1.04,0.248c-0.515,0.294-0.874,0.881-1.12,1.732 c-0.928,3.208,0.281,8.999,4.404,16.055c4.541,7.769,10.063,11.962,12.954,11.962l0,0c0.408,0,0.748-0.082,1.041-0.249 c0.514-0.292,0.883-0.876,1.118-1.728c0.867-3.146-0.281-9-4.405-16.055C20.811,9.194,15.29,5,12.4,5z"
-            />
-            <path
-              fill="#8bb7f0"
-              d="M23.5,20c0,1.935-1.565,3.5-3.5,3.5s-3.5-1.565-3.5-3.5s1.565-3.5,3.5-3.5S23.5,18.065,23.5,20z"
-            />
-            <path
-              fill="#4e7ab5"
-              d="M20,24c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S22.206,24,20,24z M20,17c-1.654,0-3,1.346-3,3 s1.346,3,3,3s3-1.346,3-3S21.654,17,20,17z"
-            />
-            <path
-              fill="#8bb7f0"
-              d="M20,28.068C9.346,28.068,1,24.524,1,20s8.346-8.068,19-8.068S39,15.476,39,20 S30.654,28.068,20,28.068z M20,12.932c-9.757,0-18,3.237-18,7.068s8.243,7.068,18,7.068S38,23.832,38,20S29.757,12.932,20,12.932z"
-            />
-            <path
-              fill="#8bb7f0"
-              d="M12.402,37C12.401,37,12.402,37,12.402,37c-0.755,0-1.438-0.172-2.033-0.511 c-0.996-0.569-1.689-1.562-2.062-2.952c-1.081-4.037,0.729-10.938,4.61-17.581C17.379,8.33,23.416,3.003,27.599,3.003 c0.754,0,1.438,0.172,2.032,0.511c0.995,0.568,1.688,1.56,2.061,2.948c1.081,4.037-0.729,10.938-4.612,17.582 C22.621,31.672,16.586,37,12.402,37z M27.599,4.003c-3.784,0-9.595,5.239-13.817,12.458c-3.695,6.325-5.507,13.083-4.508,16.818 c0.301,1.123,0.836,1.91,1.592,2.342C11.307,35.872,11.823,36,12.401,36c3.785,0,9.595-5.24,13.814-12.461 c3.697-6.326,5.51-13.085,4.509-16.818c-0.3-1.121-0.835-1.908-1.59-2.338C28.693,4.131,28.177,4.003,27.599,4.003z"
-            />
-            <g>
-              <path
-                fill="#8bb7f0"
-                d="M27.599,36.997C27.599,36.997,27.599,36.997,27.599,36.997c-4.187-0.001-10.224-5.327-14.681-12.953 C9.036,17.401,7.227,10.5,8.308,6.463c0.372-1.39,1.065-2.383,2.062-2.952C10.964,3.172,11.647,3,12.4,3 c4.185,0,10.221,5.328,14.679,12.956c3.883,6.642,5.692,13.543,4.61,17.582c-0.371,1.389-1.064,2.381-2.059,2.948 C29.036,36.825,28.353,36.997,27.599,36.997z M12.4,4c-0.577,0-1.094,0.128-1.535,0.379c-0.756,0.432-1.291,1.219-1.592,2.342 c-0.999,3.734,0.813,10.493,4.508,16.818C18,30.757,23.812,35.996,27.599,35.997l0,0c0.578,0,1.095-0.128,1.536-0.38 c0.754-0.43,1.289-1.217,1.589-2.338c1-3.735-0.812-10.494-4.508-16.818C21.996,9.241,16.187,4,12.4,4z"
-              />
-            </g>
-          </svg>
+          <Icon icon={reactIcon} width="48" height="48" />
         </span>
-        <p className="font-bold text-center text-xl pt-2">React</p>
+        <p className="font-bold text-center text-xl pt-2">ReactJS</p>
       </div>
     )
   } else if (icon === "javascript") {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path fill="#ffd600" d="M6,42V6h36v36H6z" />
-            <path
-              fill="#000001"
-              d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
-            />
-          </svg>
+          <Icon icon={javascriptIcon} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">Javascript</p>
       </div>
@@ -76,33 +47,7 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path
-              fill="#388e3c"
-              d="M17.204 19.122l-4.907 2.715C12.113 21.938 12 22.126 12 22.329v5.433c0 .203.113.39.297.492l4.908 2.717c.183.101.41.101.593 0l4.907-2.717C22.887 28.152 23 27.965 23 27.762v-5.433c0-.203-.113-.39-.297-.492l-4.906-2.715c-.092-.051-.195-.076-.297-.076-.103 0-.205.025-.297.076M42.451 24.013l-.818.452c-.031.017-.049.048-.049.082v.906c0 .034.019.065.049.082l.818.453c.031.017.068.017.099 0l.818-.453c.03-.017.049-.048.049-.082v-.906c0-.034-.019-.065-.05-.082l-.818-.452C42.534 24.004 42.517 24 42.5 24S42.466 24.004 42.451 24.013"
-            />
-            <path
-              fill="#37474f"
-              d="M35.751,13.364l-2.389-1.333c-0.075-0.042-0.167-0.041-0.241,0.003 c-0.074,0.044-0.12,0.123-0.12,0.209L33,20.295l-2.203-1.219C30.705,19.025,30.602,19,30.5,19c-0.102,0-0.205,0.025-0.297,0.076 h0.001l-4.907,2.715C25.113,21.892,25,22.08,25,22.282v5.433c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C35.887,28.106,36,27.918,36,27.715V13.788C36,13.612,35.904,13.45,35.751,13.364z M32.866,26.458l-2.23,1.235c-0.083,0.046-0.186,0.046-0.269,0l-2.231-1.235C28.051,26.412,28,26.326,28,26.234v-2.47 c0-0.092,0.051-0.177,0.135-0.224l2.231-1.234h-0.001c0.042-0.023,0.088-0.034,0.135-0.034c0.047,0,0.093,0.012,0.135,0.034 l2.23,1.234C32.949,23.587,33,23.673,33,23.765v2.47C33,26.326,32.949,26.412,32.866,26.458z"
-            />
-            <path
-              fill="#2e7d32"
-              d="M17.204,19.122L12,27.762c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0L23,22.329c0-0.203-0.113-0.39-0.297-0.492l-4.906-2.715c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076"
-            />
-            <path
-              fill="#4caf50"
-              d="M17.204,19.122l-4.907,2.715C12.113,21.938,12,22.126,12,22.329l5.204,8.642 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C22.887,28.152,23,27.965,23,27.762l-5.203-8.64c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076"
-            />
-            <path
-              fill="#37474f"
-              d="M47.703 21.791l-4.906-2.715C42.705 19.025 42.602 19 42.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C37.114 21.892 37 22.084 37 22.294v5.411c0 .209.114.402.297.503l4.908 2.717c.184.102.409.102.593 0l2.263-1.253c.207-.115.206-.412-.002-.526l-4.924-2.687C40.052 26.412 40 26.325 40 26.231v-2.466c0-.092.05-.177.13-.221l2.235-1.236h-.001c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237c.08.044.13.129.13.221v2.012c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393c.148-.086.24-.245.24-.417v-1.88C48 22.085 47.886 21.892 47.703 21.791zM10.703 21.791l-4.906-2.715C5.705 19.025 5.602 19 5.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C.114 21.892 0 22.084 0 22.294v7.465c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393C2.909 28.488 3 28.329 3 28.157v-4.393c0-.092.05-.177.13-.221l2.235-1.236H5.365c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237C7.95 23.588 8 23.673 8 23.765v4.393c0 .172.091.331.24.417l2.398 1.393c.075.043.167.043.242.001C10.954 29.925 11 29.845 11 29.759v-7.464C11 22.085 10.886 21.892 10.703 21.791z"
-            />
-          </svg>{" "}
+          <Icon icon={nodejsIcon} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">NodeJS</p>
       </div>
@@ -111,23 +56,7 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-            <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-            <path
-              fill="#FFF"
-              d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
-            />
-            <path
-              fill="#EEE"
-              d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
-            />
-          </svg>
+          <Icon icon={html5} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">HTML5</p>
       </div>
@@ -136,23 +65,7 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-            <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-            <path
-              fill="#FFF"
-              d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
-            />
-            <path
-              fill="#EEE"
-              d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
-            />
-          </svg>
+          <Icon icon={css3} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">CSS3</p>
       </div>
@@ -161,50 +74,16 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path
-              fill="#0277BD"
-              d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"
-            />
-            <path
-              fill="#FFC107"
-              d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"
-            />
-          </svg>{" "}
+          <Icon icon={pythonIcon} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">Python</p>
       </div>
     )
   } else if (icon === "graphql") {
     return (
-      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5  ">
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path
-              fill="#ff4081"
-              d="M24.5,45.161L7,34.82V14.18L24.5,3.839L42,14.18V34.82L24.5,45.161z M9,33.68l15.5,9.159L40,33.68 V15.32L24.5,6.161L9,15.32V33.68z"
-            />
-            <circle cx="24.5" cy="5.5" r="3.5" fill="#ff4081" />
-            <circle cx="24.5" cy="43.5" r="3.5" fill="#ff4081" />
-            <circle cx="8.5" cy="33.5" r="3.5" fill="#ff4081" />
-            <circle cx="40.5" cy="33.5" r="3.5" fill="#ff4081" />
-            <circle cx="8.5" cy="15.5" r="3.5" fill="#ff4081" />
-            <circle cx="40.5" cy="15.5" r="3.5" fill="#ff4081" />
-            <path
-              fill="#ff4081"
-              d="M42.72,35H6.28L24.5,2.978L42.72,35z M9.72,33H39.28L24.5,7.022L9.72,33z"
-            />
-          </svg>
+          <Icon icon={graphqlIcon} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">GraphQL</p>
       </div>
@@ -213,20 +92,126 @@ export default function SkillCard(props) {
     return (
       <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
         <span className="pr-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <path fill="#d50000" d="M0,15h48v17H24v3H13v-3H0V15z" />
-            <path
-              fill="#fff"
-              d="M3 29L8 29 8 21 11 21 11 29 13 29 13 18 3 18zM16 18v14h5v-3h5V18H16zM24 26h-3v-5h3V26zM29 18L29 29 34 29 34 21 37 21 37 29 40 29 40 21 43 21 43 29 45 29 45 18z"
-            />
-          </svg>
+          <Icon icon={npmIcon} width="48" height="48" />
         </span>
         <p className="font-bold text-center text-xl pt-2">NPM</p>
+      </div>
+    )
+  } else if (icon === "bootstrap") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={bootstrapIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Bootstrap</p>
+      </div>
+    )
+  } else if (icon === "git") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={gitIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Git</p>
+      </div>
+    )
+  } else if (icon === "apollo") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={apollostackIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Apollo</p>
+      </div>
+    )
+  } else if (icon === "gatsby") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={gatsbyIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Apollo</p>
+      </div>
+    )
+  } else if (icon === "jest") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={jestIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Jest</p>
+      </div>
+    )
+  } else if (icon === "mocha") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={mochaIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">MochaJS</p>
+      </div>
+    )
+  } else if (icon === "ionic") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={ionicIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Ionic</p>
+      </div>
+    )
+  } else if (icon === "tailwind") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={tailwindcssIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Tailwind</p>
+      </div>
+    )
+  } else if (icon === "mongodb") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={mongodbIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">MongoDB</p>
+      </div>
+    )
+  } else if (icon === "express") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={expressIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">ExpressJS</p>
+      </div>
+    )
+  } else if (icon === "sass") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={sassIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">Sass</p>
+      </div>
+    )
+  } else if (icon === "jquery") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={jqueryIcon} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">jQuery</p>
+      </div>
+    )
+  } else if (icon === "materialui") {
+    return (
+      <div className="flex flex-row w-48 h-auto p-4 bg-gray-200 rounded-lg m-5">
+        <span className="pr-5">
+          <Icon icon={materialUi} width="48" height="48" />
+        </span>
+        <p className="font-bold text-center text-xl pt-2">MaterialUI</p>
       </div>
     )
   } else {
