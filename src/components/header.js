@@ -11,8 +11,8 @@ function Header() {
           <Link className="px-2" activeClassName="underline" to="/">
             Home
           </Link>{" "}
-          <Link className="px-2" activeClassName="underline" to="/about">
-            About
+          <Link className="px-2" activeClassName="underline" to="/skills">
+            Skills
           </Link>{" "}
           <Link className="px-2" activeClassName="underline" to="/portfolio">
             Portfolio
