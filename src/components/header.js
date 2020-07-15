@@ -5,19 +5,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 function Header() {
   return (
-    <div className="flex flex-row w-full p-5">
+    <div className="flex flex-row w-full p-5 border-b">
       <div className="w-2/3 flex justify-start">
         <nav>
-          <Link className="px-2" activeClassName="underline" to="/">
+          <Link className="px-2" activeClassName="font-bold" to="/">
             Home
           </Link>{" "}
-          <Link className="px-2" activeClassName="underline" to="/skills">
+          <Link className="px-2" activeClassName="font-bold" to="/skills">
             Skills
           </Link>{" "}
-          <Link className="px-2" activeClassName="underline" to="/portfolio">
+          <Link className="px-2" activeClassName="font-bold" to="/portfolio">
             Portfolio
           </Link>{" "}
-          <Link className="px-2" activeClassName="underline" to="/contact">
+          <Link className="px-2" activeClassName="font-bold" to="/contact">
             Contact
           </Link>{" "}
         </nav>
