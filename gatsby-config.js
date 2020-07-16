@@ -3,7 +3,7 @@ module.exports = {
     title: `Aron Naylor`,
     description: `Frontend developer portfolio`,
     author: `Aron Naylor`,
-    date: `2020`
+    date: `2020`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

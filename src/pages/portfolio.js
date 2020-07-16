@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioCard from "../components/portfolioCard"
 
-
 export default function Portfolio() {
   const data = useStaticQuery(graphql`
     query {
@@ -55,7 +54,6 @@ export default function Portfolio() {
             skill={["NodeJS", "Bootstrap", "HTML5", "CSS3"]}
           />
         </div>
-        
       </div>
     </Layout>
   )

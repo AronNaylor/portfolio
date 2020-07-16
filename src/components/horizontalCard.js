@@ -5,15 +5,15 @@ import Layout from "./layout"
 
 export default function HorizontalCard() {
   const data = useStaticQuery(graphql`
-  query {
-    file(relativePath: { eq: "image02.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+    query {
+      file(relativePath: { eq: "image02.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
-  }
   `)
 
   return (

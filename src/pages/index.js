@@ -1,8 +1,9 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FeatureCard from "../components/featureCard"
+import webImage from "../images/index/web.jpg"
+import appImage from "../images/index/app.jpg"
 
 function IndexPage() {
   return (
@@ -34,45 +35,29 @@ function IndexPage() {
           Services
         </h2>
       </div>
-      {/*Container*/}
-      <div className="flex flex-row flex-wrap w-full h-auto justify-center -p-2">
-        <div className="flex xl:w-1/2 lg:w-1/2 md:w-full sm:w-full h-auto justify-center p-2">
+      <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
+        <div className="w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2">
           <FeatureCard
+            src={webImage}
+            alt={"Web development image"}
+            title={"Web Development"}
             features={[
-              "Modern Website Design",
-              "Progressive Web Applications",
-              "Content Management Systems",
-              "JAMstack",
+              "Responsive, Mobile-first web development.",
+              "Accessible, elegant and secure websites.",
+              "End-user focused, client-facing.. always.",
             ]}
-            image={"https://img.icons8.com/color/96/000000/monitor.png"}
           />
         </div>
-        <div className="flex xl:w-1/2 lg:w-1/2 md:w-full sm:w-full h-auto justify-center p-2">
+        <div className="w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2">
           <FeatureCard
+            src={appImage}
+            alt={"Mobile app image"}
+            title={"App Development"}
             features={[
-              "Mobile applications",
-              "Built using the Ionic framework",
+              "Progressive Web Applications.",
+              "Built using the Ionic Framework.",
+              "Modern, stylish, functional.",
             ]}
-            image="https://img.icons8.com/color/96/000000/android.png"
-          />
-        </div>
-      </div>
-      {/*Container*/}
-      <div className="flex flex-row flex-wrap w-full h-auto justify-center -p-2">
-        <div className="flex xl:w-1/2 lg:w-1/2 md:w-full sm:w-full h-auto justify-center p-2">
-          <FeatureCard
-            features={["RESTful API design", "GraphQL data fetching"]}
-            image="https://img.icons8.com/color/96/000000/api-settings.png"
-          />
-        </div>
-        <div className="flex xl:w-1/2 lg:w-1/2 md:w-full sm:w-full h-auto justify-center p-2">
-          <FeatureCard
-            features={[
-              "Applied Machine Learning",
-              "Classification and Regression",
-              "Weka Machine Learning Platform",
-            ]}
-            image="https://img.icons8.com/color/96/000000/artificial-intelligence.png"
           />
         </div>
       </div>
