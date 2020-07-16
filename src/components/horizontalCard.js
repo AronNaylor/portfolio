@@ -6,7 +6,7 @@ import Layout from "./layout"
 export default function HorizontalCard() {
   const data = useStaticQuery(graphql`
   query {
-    file(relativePath: { eq: "image01.jpg" }) {
+    file(relativePath: { eq: "image02.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -22,8 +22,8 @@ export default function HorizontalCard() {
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="testing"
-          style={{height: '100%'}}
-          imgStyle={{objectFit: 'contain', objectPosition: 'left'}}
+          //style={{height: '100%'}}
+          //imgStyle={{objectFit: 'contain', objectPosition: 'left'}}
           fadeIn={true}
         />
       </div>

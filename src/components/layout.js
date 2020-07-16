@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Header from "./header"
+import Footer from './Footer'
 
 function Layout({ children }) {
   return (
@@ -11,6 +12,7 @@ function Layout({ children }) {
       <main className="flex-1 w-10/12 max-w-full px-4 py-8 mx-auto md:px-8 md:py-16">
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

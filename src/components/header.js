@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 function Header() {
   return (
-    <div className="flex flex-row w-full p-5 border-b">
+    <div className="flex flex-row w-full p-5 border-b border-gray-500">
       <div className="w-2/3 flex justify-start">
         <nav>
           <Link className="px-2" activeClassName="font-bold" to="/">
