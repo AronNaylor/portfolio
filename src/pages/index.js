@@ -24,7 +24,7 @@ function IndexPage() {
 
   const images = data.allFile.edges.map(item => item.node.childImageSharp.fluid)
   const featureCardContainer =
-    "flex justify-center w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2"
+    "flex justify-center w-full my-2 md:px-2 lg:my-4 lg:px-4 lg:w-full xl:w-1/2"
 
   return (
     <Layout>
