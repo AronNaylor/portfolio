@@ -3,74 +3,66 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// Set up with Netlify forms on deployment
+// https://www.gatsbyjs.org/docs/building-a-contact-form/
+
 function ContactPage() {
+  const inputStyle =
+    "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+  const labelStyle = "block text-gray-700 text-sm font-bold mb-2"
+
   return (
     <Layout>
       <SEO
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
         title="Contact"
       />
-      <section>
-        <form className="mx-auto md:w-1/2">
-          <p className="mb-8 leading-loose">
-            Here is an example of a form built using the official Tailwind CSS
-            Custom Forms plugin.{` `}
-            <a
-              className="font-bold text-gray-700 no-underline"
-              href="https://github.com/tailwindcss/custom-forms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read the docs
-            </a>
-            .
-          </p>
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="first-name"
-          >
-            First Name
+      <section className="flex flex-row justify-center w-full h-auto">
+        <form className="bg-white shadow-md rounded border-2 border-gray-200 px-8 pt-6 pb-8 mb-4">
+          <label className={labelStyle}>
+            Name
+            <input className={inputStyle} type="text" name="name" id="name" />
           </label>
-
-          <input
-            className="w-full mb-6 form-input"
-            id="first-name"
-            placeholder="Bill"
-            type="text"
-          />
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="last-name"
-          >
-            Last Name
+          <label className={labelStyle}>
+            Email
+            <input
+              className={inputStyle}
+              type="email"
+              name="email"
+              id="email"
+            />
           </label>
-
-          <input
-            className="w-full mb-6 form-input"
-            id="last-name"
-            placeholder="Murray"
-            type="text"
-          />
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="message"
-          >
+          <label className={labelStyle}>
+            Subject
+            <input
+              className={inputStyle}
+              type="text"
+              name="subject"
+              id="subject"
+            />
+          </label>
+          <label className={labelStyle}>
             Message
+            <textarea
+              className={inputStyle}
+              name="message"
+              id="message"
+              rows="5"
+            />
           </label>
-
-          <textarea
-            className="w-full mb-6 form-textarea"
-            id="message"
-            placeholder="Say something..."
-            rows="8"
-          />
-
-          <button className="px-4 py-2 text-sm font-bold text-white bg-gray-700 border-b-4 border-gray-800 rounded hover:border-gray-700 hover:bg-gray-600">
-            Submit
-          </button>
+          <div class="flex items-center justify-between">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Send
+            </button>
+            <input
+              className="inline-block align-baseline font-bold text-md bg-white text-red-500 hover:text-red-800"
+              type="reset"
+              value="Clear"
+            />
+          </div>
         </form>
       </section>
     </Layout>

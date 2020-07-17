@@ -23,7 +23,7 @@ import apollostackIcon from "@iconify/icons-logos/apollostack"
 import gatsbyIcon from "@iconify/icons-logos/gatsby"
 
 export default function SkillChip(props) {
-  const testLookup = {
+  const iconTable = {
     React: reactIcon,
     Javascript: javascriptIcon,
     NodeJS: nodejsIcon,
@@ -48,9 +48,9 @@ export default function SkillChip(props) {
   }
 
   return (
-    <div className="flex justify-center items-center m-1 font-medium py-1 px-2 rounded-full text-gray-900 border border-gray-300">
+    <div className="flex justify-center items-center m-1 font-medium py-1 px-2 rounded text-gray-900 border border-gray-300">
       <div className="pr-1">
-        <Icon icon={testLookup[props.name]} width="18" height="18" />
+        <Icon icon={iconTable[props.name]} width="18" height="18" />
       </div>
       <div className="text-xs font-semibold leading-none max-w-full flex-initial pr-1">
         {props.name}

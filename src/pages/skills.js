@@ -16,7 +16,7 @@ export default function Skills() {
       <div className="w-full h-auto pb-2">
         <h1 className="text-center text-2xl underline font-semibold">Skills</h1>
       </div>
-      <div className="flex flex-col max-w-full h-full py-2 items-center">
+      <div className="flex flex-col max-w-full h-full items-center">
         <div className="flex flex-row flex-wrap w-full h-full justify-center xl:px-10 lg:px-10 md:px--2 sm:px-0 xs:px-0">
           <SkillCard icon={"javascript"} />
           <SkillCard icon={"react"} />

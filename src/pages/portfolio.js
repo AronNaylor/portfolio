@@ -41,7 +41,7 @@ export default function Portfolio() {
             title={"Test Card"}
             date={"16/07/2020"}
             description={"How does this card look?"}
-            skill={["NodeJS", "Bootstrap", "HTML5", "CSS3"]}
+            skill={["React", "Javascript", "Tailwind", "MaterialUI"]}
           />
         </div>
         <div className="w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
@@ -51,7 +51,7 @@ export default function Portfolio() {
             title={"Test Card"}
             date={"16/07/2020"}
             description={"How does this card look?"}
-            skill={["NodeJS", "Bootstrap", "HTML5", "CSS3"]}
+            skill={["GraphQL", "Apollo", "Python", "Sass"]}
           />
         </div>
       </div>
