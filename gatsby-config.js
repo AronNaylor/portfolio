@@ -6,6 +6,7 @@ module.exports = {
     date: `2020`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {

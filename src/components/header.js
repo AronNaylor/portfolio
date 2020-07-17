@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
@@ -8,18 +8,18 @@ function Header() {
     <div className="flex flex-row w-full p-5 border-b border-gray-500">
       <div className="w-2/3 flex justify-start">
         <nav>
-          <Link className="px-2" activeClassName="font-bold" to="/">
+          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/">
             Home
-          </Link>{" "}
-          <Link className="px-2" activeClassName="font-bold" to="/skills">
+          </AniLink>{" "}
+          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/skills">
             Skills
-          </Link>{" "}
-          <Link className="px-2" activeClassName="font-bold" to="/portfolio">
+          </AniLink>{" "}
+          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/portfolio">
             Portfolio
-          </Link>{" "}
-          <Link className="px-2" activeClassName="font-bold" to="/contact">
+          </AniLink>{" "}
+          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/contact">
             Contact
-          </Link>{" "}
+          </AniLink>{" "}
         </nav>
       </div>
       <div className="w-1/3 flex justify-end">
