@@ -25,6 +25,7 @@ import SkillLayout from "./skills/skillLayout"
 
 export default function SkillCard(props) {
   const icon = props.icon
+  const ml = "ml-5";
 
   switch (icon) {
     case "react":

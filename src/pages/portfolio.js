@@ -43,7 +43,7 @@ export default function Portfolio() {
         </div>
         <div className="w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
           <PortfolioCard
-            src={images[0]}
+            src={images[1]}
             alt={"React Speed Typing Game"}
             title={"React Speed Typing Game"}
             date={"30/03/2020"}
@@ -53,7 +53,7 @@ export default function Portfolio() {
         </div>
         <div className="w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
           <PortfolioCard
-            src={images[1]}
+            src={images[0]}
             alt={"jQuery Drumkit"}
             title={"jQuery Drumkit"}
             date={"30/04/2020"}

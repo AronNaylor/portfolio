@@ -4,7 +4,7 @@ import SkillChip from "./skills/skillChip"
 
 export default function PortfolioCard(props) {
   return (
-    <div className="w-full border-2 border-gray-500 shadow-xl overflow-hidden">
+    <div className="w-full border-2 border-gray-500 shadow-xl overflow-hidden min-h-full" >
       <Img fluid={props.src} alt={props.alt} fadeIn={true} />
       <div className="flex items-center justify-between leading-tight p-2 -mt-2 md:p-4">
         <h1 className="text-lg">{props.title}</h1>
