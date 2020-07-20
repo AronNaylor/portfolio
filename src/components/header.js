@@ -8,16 +8,40 @@ function Header() {
     <div className="flex flex-row w-full p-5 border-b border-gray-500">
       <div className="w-2/3 flex justify-start">
         <nav>
-          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/">
+          <AniLink
+            swipe
+            direction={"right"}
+            className="px-2"
+            activeClassName="font-bold"
+            to="/"
+          >
             Home
           </AniLink>{" "}
-          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/skills">
+          <AniLink
+            swipe
+            direction={"right"}
+            className="px-2"
+            activeClassName="font-bold"
+            to="/skills"
+          >
             Skills
           </AniLink>{" "}
-          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/portfolio">
+          <AniLink
+            swipe
+            direction={"right"}
+            className="px-2"
+            activeClassName="font-bold"
+            to="/portfolio"
+          >
             Portfolio
           </AniLink>{" "}
-          <AniLink swipe direction={'right'} className="px-2" activeClassName="font-bold" to="/contact">
+          <AniLink
+            swipe
+            direction={"right"}
+            className="px-2"
+            activeClassName="font-bold"
+            to="/contact"
+          >
             Contact
           </AniLink>{" "}
         </nav>

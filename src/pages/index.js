@@ -23,6 +23,11 @@ function IndexPage() {
   `)
 
   const images = data.allFile.edges.map(item => item.node.childImageSharp.fluid)
+  const web = images.filter(img => (img.src.search(/web/) !== -1 ? img : null))
+  const app = images.filter(img => (img.src.search(/app/) !== -1 ? img : null))
+  const api = images.filter(img => (img.src.search(/api/) !== -1 ? img : null))
+  const ml = images.filter(img => (img.src.search(/ml/) !== -1 ? img : null))
+
   const featureCardContainer =
     "flex justify-center w-full my-2 md:px-2 lg:my-4 lg:px-4 lg:w-full xl:w-1/2"
 
@@ -50,58 +55,60 @@ function IndexPage() {
           MongoDB, ExpressJS and NodeJS.
         </p>
       </div>
-      <div className="w-full h-auto py-5">
-        <h2 className="text-center text-2xl underline font-semibold">
-          Services
-        </h2>
-      </div>
-      <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
-        <div className={featureCardContainer}>
-          <FeatureCard
-            src={images[1]}
-            alt={"Web development image"}
-            title={"Web Development"}
-            features={[
-              "Responsive, Mobile-first web development.",
-              "Fast, accessible, elegant and secure websites.",
-              "Built with the end user in mind.",
-            ]}
-          />
+      <div className="w-full h-auto flex flex-col justify-center items-center">
+        <div className="w-full h-auto py-5">
+          <h2 className="text-center text-2xl underline font-semibold">
+            Services
+          </h2>
         </div>
-        <div className={featureCardContainer}>
-          <FeatureCard
-            src={images[0]}
-            alt={"Mobile app image"}
-            title={"App Development"}
-            features={[
-              "Progressive Web Applications.",
-              "Built using the Ionic Framework.",
-              "Modern, stylish, functional.",
-            ]}
-          />
-        </div>
-        <div className={featureCardContainer}>
-          <FeatureCard
-            src={images[2]}
-            alt={"API Image"}
-            title={"API Development"}
-            features={[
-              "REST APIs design and querying.",
-              "GraphQL and Apollo for declarative data fetching.",
-              "Database integration with MongoDB.",
-            ]}
-          />
-        </div>
-        <div className={featureCardContainer}>
-          <FeatureCard
-            src={images[3]}
-            alt={"Machine learning image"}
-            title={"Applied Machine Learning"}
-            features={[
-              "Classification and Regression models with Python.",
-              "Applied data analysis using Weka.",
-            ]}
-          />
+        <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
+          <div className={featureCardContainer}>
+            <FeatureCard
+              src={web}
+              alt={"Web development image"}
+              title={"Web Development"}
+              features={[
+                "Responsive, Mobile-first web development.",
+                "Fast, accessible and secure websites.",
+                "Built with the end user in mind.",
+              ]}
+            />
+          </div>
+          <div className={featureCardContainer}>
+            <FeatureCard
+              src={app}
+              alt={"Mobile app image"}
+              title={"App Development"}
+              features={[
+                "Progressive Web Applications.",
+                "Built using the Ionic Framework.",
+                "Modern, stylish and functional across devices.",
+              ]}
+            />
+          </div>
+          <div className={featureCardContainer}>
+            <FeatureCard
+              src={api}
+              alt={"API Image"}
+              title={"API Development"}
+              features={[
+                "Design, develop and deploy REST API's.",
+                "GraphQL and Apollo for declarative data fetching.",
+                "Database integration with MongoDB.",
+              ]}
+            />
+          </div>
+          <div className={featureCardContainer}>
+            <FeatureCard
+              src={ml}
+              alt={"Machine learning image"}
+              title={"Applied Machine Learning"}
+              features={[
+                "Classification and Regression models built with Python.",
+                "Applied data analysis using Weka.",
+              ]}
+            />
+          </div>
         </div>
       </div>
     </Layout>

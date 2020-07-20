@@ -21,8 +21,7 @@ import jqueryIcon from "@iconify/icons-logos/jquery"
 import gitIcon from "@iconify/icons-logos/git-icon"
 import apollostackIcon from "@iconify/icons-logos/apollostack"
 import gatsbyIcon from "@iconify/icons-logos/gatsby"
-import d3Icon from '@iconify/icons-logos/d3';
-
+import d3Icon from "@iconify/icons-logos/d3"
 
 export default function SkillChip(props) {
   const iconTable = {
@@ -47,7 +46,7 @@ export default function SkillChip(props) {
     Git: gitIcon,
     Apollo: apollostackIcon,
     GatsbyJS: gatsbyIcon,
-    D3: d3Icon
+    D3: d3Icon,
   }
 
   return (
