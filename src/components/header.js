@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 function Header() {
   return (
-    <div className="flex flex-row w-full p-5 border-b border-gray-500">
+    <div className="flex flex-row w-full p-5 border-b border-blue-500 bg-blue-700 text-white">
       <div className="w-2/3 flex justify-start">
         <nav>
           <AniLink
@@ -55,7 +55,7 @@ function Header() {
           <FontAwesomeIcon
             icon={faLinkedin}
             size="lg"
-            style={{ color: "#0077B5" }}
+            style={{ color: "white" }}
           />
         </a>
         <a href="https://github.com/AronNaylor" target="blank" className="pr-4">

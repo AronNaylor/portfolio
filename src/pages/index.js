@@ -37,23 +37,10 @@ function IndexPage() {
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
         title="Home"
       />
-      <div className="text-center w-full xl:px-10 lg:px-10 md:px--2 sm:px-0">
-        <p className="text-lg">
-          I'm Aron, a Frontend Developer from the UK. I enjoy building with the
-          popular MERN (MongoDB, ExpressJS, React, NodeJS) stack. I have a
-          thirst for knowledge and always keep up-to-date with new frameworks,
-          libraries and technologies.
-        </p>
-        <br />
-        <p className="text-lg">
-          I have experience building client-facing websites, progressive web
-          applications, mobile apps and machine learning algorithms.
-        </p>
-        <br />
-        <p className="text-lg">
-          I can design and develop RESTful API's and Microservices utilising
-          MongoDB, ExpressJS and NodeJS.
-        </p>
+      <div className="text-center xl:px-10 lg:px-10 md:px--2 sm:px-0">
+        <p className="text-lg">I'm <b>Aron</b>, a Frontend developer from the UK.
+        I served in the Parachute Regiment for 8 years before leaving to to become a developer.
+        I enjoy building with the MERN Software Stack (MongoDB, ExpressJS, ReactJS, NodeJs).</p>
       </div>
       <div className="w-full h-auto flex flex-col justify-center items-center">
         <div className="w-full h-auto py-5">
