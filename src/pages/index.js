@@ -30,7 +30,7 @@ function IndexPage() {
     <Layout>
       <SEO
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
-        title="About"
+        title="Home"
       />
       <div className="text-center w-full xl:px-10 lg:px-10 md:px--2 sm:px-0">
         <p className="text-lg">

@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 
 export default function FeatureCard(props) {
   return (
-    <div className="max-w-lg border-2 sm:flex shadow-xl">
+    <div className="max-w-lg border border-gray-500 sm:flex hover:shadow-xl">
       <div className="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center text-center overflow-hidden">
         <Img fluid={props.src} alt={props.alt} fadeIn={true} />
       </div>

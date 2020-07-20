@@ -21,183 +21,39 @@ import jqueryIcon from "@iconify/icons-logos/jquery"
 import gitIcon from "@iconify/icons-logos/git-icon"
 import apollostackIcon from "@iconify/icons-logos/apollostack"
 import gatsbyIcon from "@iconify/icons-logos/gatsby"
+import d3Icon from "@iconify/icons-logos/d3"
 import SkillLayout from "./skills/skillLayout"
 
 export default function SkillCard(props) {
-  const icon = props.icon
-  const ml = "ml-5";
-
-  switch (icon) {
-    case "react":
-      return (
-        <SkillLayout>
-          <Icon icon={reactIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">ReactJS</p>
-        </SkillLayout>
-      )
-      break
-    case "javascript":
-      return (
-        <SkillLayout>
-          <Icon icon={javascriptIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Javascript</p>
-        </SkillLayout>
-      )
-      break
-    case "nodejs":
-      return (
-        <SkillLayout>
-          <Icon icon={nodejsIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">NodeJS</p>
-        </SkillLayout>
-      )
-      break
-    case "html":
-      return (
-        <SkillLayout>
-          <Icon icon={html5} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">HTML5</p>
-        </SkillLayout>
-      )
-      break
-    case "css":
-      return (
-        <SkillLayout>
-          <Icon icon={css3} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">CSS3</p>
-        </SkillLayout>
-      )
-      break
-    case "python":
-      return (
-        <SkillLayout>
-          <Icon icon={pythonIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Python</p>
-        </SkillLayout>
-      )
-      break
-    case "graphql":
-      return (
-        <SkillLayout>
-          <Icon icon={graphqlIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">GraphQL</p>
-        </SkillLayout>
-      )
-      break
-    case "npm":
-      return (
-        <SkillLayout>
-          <Icon icon={npmIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">NPM</p>
-        </SkillLayout>
-      )
-      break
-    case "bootstrap":
-      return (
-        <SkillLayout>
-          <Icon icon={bootstrapIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Bootstrap</p>
-        </SkillLayout>
-      )
-      break
-    case "git":
-      return (
-        <SkillLayout>
-          <Icon icon={gitIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Git</p>
-        </SkillLayout>
-      )
-      break
-    case "apollo":
-      return (
-        <SkillLayout>
-          <Icon icon={apollostackIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Apollo</p>
-        </SkillLayout>
-      )
-      break
-    case "gatsby":
-      return (
-        <SkillLayout>
-          <Icon icon={gatsbyIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">GatsbyJS</p>
-        </SkillLayout>
-      )
-      break
-    case "jest":
-      return (
-        <SkillLayout>
-          <Icon icon={jestIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Jest</p>
-        </SkillLayout>
-      )
-      break
-    case "mocha":
-      return (
-        <SkillLayout>
-          <Icon icon={mochaIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Mocha</p>
-        </SkillLayout>
-      )
-      break
-    case "ionic":
-      return (
-        <SkillLayout>
-          <Icon icon={ionicIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Ionic</p>
-        </SkillLayout>
-      )
-      break
-    case "tailwind":
-      return (
-        <SkillLayout>
-          <Icon icon={tailwindcssIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Tailwind</p>
-        </SkillLayout>
-      )
-      break
-    case "mongodb":
-      return (
-        <SkillLayout>
-          <Icon icon={mongodbIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">MongoDB</p>
-        </SkillLayout>
-      )
-      break
-    case "express":
-      return (
-        <SkillLayout>
-          <Icon icon={expressIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">ExpressJS</p>
-        </SkillLayout>
-      )
-      break
-    case "sass":
-      return (
-        <SkillLayout>
-          <Icon icon={sassIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">Sass</p>
-        </SkillLayout>
-      )
-      break
-    case "jquery":
-      return (
-        <SkillLayout>
-          <Icon icon={jqueryIcon} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">jQuery</p>
-        </SkillLayout>
-      )
-      break
-    case "materialui":
-      return (
-        <SkillLayout>
-          <Icon icon={materialUi} width="48" height="48" />
-          <p className="font-bold text-center text-xl pt-2 pl-5">MaterialUI</p>
-        </SkillLayout>
-      )
-      break
-    default:
-      return <h1>Error</h1>
-      break
+  const iconTable = {
+    React: reactIcon,
+    Javascript: javascriptIcon,
+    NodeJS: nodejsIcon,
+    HTML5: html5,
+    CSS3: css3,
+    Python: pythonIcon,
+    GraphQL: graphqlIcon,
+    NPM: npmIcon,
+    Bootstrap: bootstrapIcon,
+    Jest: jestIcon,
+    Mocha: mochaIcon,
+    Ionic: ionicIcon,
+    Tailwind: tailwindcssIcon,
+    Sass: sassIcon,
+    MaterialUI: materialUi,
+    MongoDB: mongodbIcon,
+    ExpressJS: expressIcon,
+    jQuery: jqueryIcon,
+    Git: gitIcon,
+    Apollo: apollostackIcon,
+    GatsbyJS: gatsbyIcon,
+    D3: d3Icon,
   }
+
+  return (
+    <SkillLayout>
+      <Icon icon={iconTable[props.icon]} width="48" height="48" />
+      <p className="font-bold text-center text-xl pt-2 pl-5">{props.name}</p>
+    </SkillLayout>
+  )
 }
