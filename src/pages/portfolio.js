@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioCard from "../components/portfolioCard"
-import heat from "../images/portfolio/heat.png"
 
 export default function Portfolio() {
   const data = useStaticQuery(graphql`

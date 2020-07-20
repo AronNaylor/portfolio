@@ -1,11 +1,16 @@
 import PropTypes from "prop-types"
 import React from "react"
-
+import Helmet from 'react-helmet'
+import favicon from '../images/favicon.ico'
 import Header from "./header"
 import Footer from "./Footer"
 
 function Layout({ children }) {
   return (
+  <>
+  <Helmet>
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <div className="flex flex-col min-h-screen w-full">
       <Header />
 
@@ -14,6 +19,7 @@ function Layout({ children }) {
       </main>
       <Footer />
     </div>
+  </>
   )
 }
 

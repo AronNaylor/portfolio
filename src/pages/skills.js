@@ -4,9 +4,6 @@ import SEO from "../components/seo"
 import SkillCard from "../components/skillCard"
 
 export default function Skills() {
-  const skillCardClass =
-    "flex flex-col sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 h-auto items-center"
-
   const skills = [
     "React",
     "NodeJS",

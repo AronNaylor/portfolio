@@ -4,7 +4,7 @@ import SkillChip from "./skills/skillChip"
 
 export default function PortfolioCard(props) {
   return (
-    <a href={props.link} target="_blank">
+    <a href={props.link} target="_blank" rel="noreferrer">
       <div className="w-full border border-gray-500 hover:shadow-2xl overflow-hidden min-h-full">
         <Img fluid={props.src} alt={props.alt} fadeIn={true} />
         <div className="flex items-center justify-between leading-tight p-2 -mt-2 md:p-4">

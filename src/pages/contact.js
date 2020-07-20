@@ -19,11 +19,11 @@ function ContactPage() {
       />
       <section className="flex flex-row justify-center w-full h-auto">
         <form className="w-auto xl:w-1/2 lg:w-1/3 bg-white shadow-md rounded border-2 border-gray-200 px-8 pt-6 pb-8 mb-4">
-          <label className={labelStyle}>
+          <label id="nameLabel" for="name" className={labelStyle}>
             Name
             <input className={inputStyle} type="text" name="name" id="name" />
           </label>
-          <label className={labelStyle}>
+          <label id="emailLabel" for="email" className={labelStyle}>
             Email
             <input
               className={inputStyle}
@@ -32,7 +32,7 @@ function ContactPage() {
               id="email"
             />
           </label>
-          <label className={labelStyle}>
+          <label id="subjectLabel" for="subject" className={labelStyle}>
             Subject
             <input
               className={inputStyle}
@@ -41,7 +41,7 @@ function ContactPage() {
               id="subject"
             />
           </label>
-          <label className={labelStyle}>
+          <label id="messageLabel" for="message" className={labelStyle}>
             Message
             <textarea
               className={inputStyle}
