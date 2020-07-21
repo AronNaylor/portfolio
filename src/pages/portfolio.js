@@ -29,6 +29,9 @@ export default function Portfolio() {
   const portfolio = images.filter(img =>
     img.src.search(/portfolio/) !== -1 ? img : null
   )
+  const appleClone = images.filter(img =>
+    img.src.search(/apple-clone/) !== -1 ? img : null
+  )
   const hangman = images.filter(img =>
     img.src.search(/placeholder/) !== -1 ? img : null
   )
@@ -67,6 +70,17 @@ export default function Portfolio() {
             description={"Personal portfolio."}
             skill={["GatsbyJS", "React", "Tailwind", "Netlify"]}
             link={"https://aronnaylor.com"}
+          />
+        </div>
+        <div className={cardContainerStyles}>
+          <PortfolioCard
+            src={appleClone}
+            alt={"apple.com Clone"}
+            title={"apple.com Clone"}
+            date={"19/07/2020"}
+            description={"A clone of Apple.com."}
+            skill={["Bootstrap", "CSS3", "HTML5"]}
+            link={"https://apple-clone-aron-naylor.bss.design/"}
           />
         </div>
         <div className={cardContainerStyles}>
