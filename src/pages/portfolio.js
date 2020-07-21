@@ -26,6 +26,9 @@ export default function Portfolio() {
     image => image.node.childImageSharp.fluid
   )
 
+  const portfolio = images.filter(img =>
+    img.src.search(/portfolio/) !== -1 ? img : null
+  )
   const hangman = images.filter(img =>
     img.src.search(/placeholder/) !== -1 ? img : null
   )
@@ -55,6 +58,17 @@ export default function Portfolio() {
         title="Portfolio"
       />
       <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
+        <div className={cardContainerStyles}>
+          <PortfolioCard
+            src={portfolio}
+            alt={"Portfolio Image"}
+            title={"Portfolio"}
+            date={"20/07/2020"}
+            description={"Personal portfolio."}
+            skill={["GatsbyJS", "React", "Tailwind", "Netlify"]}
+            link={"https://wwww.aronnaylor.com"}
+          />
+        </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
             src={hangman}

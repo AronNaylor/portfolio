@@ -25,6 +25,8 @@ export default function Skills() {
     "Apollo",
     "Git",
     "NPM",
+    "Netlify",
+    "Heroku",
   ]
 
   return (

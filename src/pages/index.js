@@ -38,9 +38,12 @@ function IndexPage() {
         title="Home"
       />
       <div className="text-center xl:px-10 lg:px-10 md:px--2 sm:px-0">
-        <p className="text-lg">I'm <b>Aron</b>, a Frontend developer from the UK.
-        I served in the Parachute Regiment for 8 years before leaving to become a software developer.
-        I enjoy building with the <b>MERN</b> Software Stack (MongoDB, ExpressJS, ReactJS, NodeJs).</p>
+        <p className="text-lg">
+          I'm <b>Aron</b>, a Frontend developer from the UK. I served in the
+          Parachute Regiment for 8 years before leaving to become a software
+          developer. I enjoy building with the <b>MERN</b> Software Stack
+          (MongoDB, ExpressJS, ReactJS, NodeJs).
+        </p>
       </div>
       <div className="w-full h-auto flex flex-col justify-center items-center">
         <div className="w-full h-auto py-5">

@@ -22,6 +22,8 @@ import gitIcon from "@iconify/icons-logos/git-icon"
 import apollostackIcon from "@iconify/icons-logos/apollostack"
 import gatsbyIcon from "@iconify/icons-logos/gatsby"
 import d3Icon from "@iconify/icons-logos/d3"
+import netlifyIcon from "@iconify/icons-logos/netlify"
+import herokuIcon from "@iconify/icons-logos/heroku"
 import SkillLayout from "./skills/skillLayout"
 
 export default function SkillCard(props) {
@@ -48,6 +50,8 @@ export default function SkillCard(props) {
     Apollo: apollostackIcon,
     GatsbyJS: gatsbyIcon,
     D3: d3Icon,
+    Netlify: netlifyIcon,
+    Heroku: herokuIcon,
   }
 
   return (
