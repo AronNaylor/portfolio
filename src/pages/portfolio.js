@@ -66,7 +66,7 @@ export default function Portfolio() {
             date={"20/07/2020"}
             description={"Personal portfolio."}
             skill={["GatsbyJS", "React", "Tailwind", "Netlify"]}
-            link={"https://wwww.aronnaylor.com"}
+            link={"https://aronnaylor.com"}
           />
         </div>
         <div className={cardContainerStyles}>
