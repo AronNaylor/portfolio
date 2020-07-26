@@ -3,33 +3,29 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioCard from "../components/portfolioCard"
+import { getImage } from "../utils/getImage"
 
 export default function Portfolio() {
   const data = useStaticQuery(graphql`
-      query {
-          allFile(filter: { relativeDirectory: { eq: "portfolio" } }) {
-              edges {
-                  node {
-                      base
-                      childImageSharp {
-                          fluid {
-                              ...GatsbyImageSharpFluid
-                          }
-                      }
-                  }
+    query {
+      allFile(filter: { relativeDirectory: { eq: "portfolio" } }) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
+            }
           }
+        }
       }
+    }
   `)
 
   const images = data.allFile.edges.map(
     image => image.node.childImageSharp.fluid
   )
-
-  function getImage(name) {
-    const re = new RegExp(name)
-    return images.filter(img => (img.src.search(re) !== -1 ? img : null))
-  }
 
   const cardContainerStyles =
     "w-full md:px-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 my-2"
@@ -43,7 +39,7 @@ export default function Portfolio() {
       <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("portfolio")}
+            src={getImage(images, "portfolio")}
             alt={"Portfolio Image"}
             title={"Portfolio"}
             date={"20/07/2020"}
@@ -54,7 +50,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("apple-clone")}
+            src={getImage(images, "apple-clone")}
             alt={"apple.com Clone"}
             title={"apple.com Clone"}
             date={"19/07/2020"}
@@ -65,7 +61,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("placeholder")}
+            src={getImage(images, "placeholder")}
             alt={"Python Hangman"}
             title={"Python Hangman Game"}
             date={"6/06/2020"}
@@ -76,7 +72,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("choropleth")}
+            src={getImage(images, "choropleth")}
             alt={"D3.js Choropleth Map"}
             title={"Choropleth Map"}
             date={"25/05/2020"}
@@ -89,7 +85,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("heat")}
+            src={getImage(images, "heat")}
             alt={"D3.js Heat Map"}
             title={"Heat Map"}
             date={"24/05/2020"}
@@ -102,7 +98,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("markdown")}
+            src={getImage(images, "markdown")}
             alt={"Markdown Previewer"}
             title={"Markdown Previewer"}
             date={"03/04/2020"}
@@ -115,7 +111,7 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("pomodoro")}
+            src={getImage(images, "pomodoro")}
             alt={"React Pomodoro Clock"}
             title={"React Pomodoro Clock"}
             date={"03/04/2020"}
@@ -129,7 +125,7 @@ export default function Portfolio() {
 
         <div className={cardContainerStyles}>
           <PortfolioCard
-            src={getImage("typing")}
+            src={getImage(images, "typing")}
             alt={"React Speed Typing Game"}
             title={"React Speed Typing Game"}
             date={"30/03/2020"}

@@ -6,7 +6,7 @@ export default function PortfolioCard(props) {
   return (
     <a href={props.link} target="_blank" rel="noreferrer">
       <div className="w-full border border-gray-500 hover:shadow-2xl overflow-hidden min-h-full">
-        <Img fluid={props.src} alt={props.alt} fadeIn={true}/>
+        <Img fluid={props.src} alt={props.alt} fadeIn={true} />
         <div className="px-2">
           <div className="flex items-center justify-between leading-tight p-2 mt-2">
             <h1 className="text-lg font-semibold">{props.title}</h1>
@@ -17,7 +17,7 @@ export default function PortfolioCard(props) {
           </div>
           <div className="flex flex-row flex-wrap p-1 -mt-2">
             {props.skill.map(icon => (
-              <SkillChip name={icon} key={icon}/>
+              <SkillChip name={icon} key={icon} />
             ))}
           </div>
         </div>

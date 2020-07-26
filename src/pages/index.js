@@ -3,31 +3,27 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FeatureCard from "../components/featureCard"
+import { getImage } from "../utils/getImage"
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
-      query {
-          allFile(filter: { relativeDirectory: { eq: "index" } }) {
-              edges {
-                  node {
-                      base
-                      childImageSharp {
-                          fluid {
-                              ...GatsbyImageSharpFluid
-                          }
-                      }
-                  }
+    query {
+      allFile(filter: { relativeDirectory: { eq: "index" } }) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
+            }
           }
+        }
       }
+    }
   `)
 
   const images = data.allFile.edges.map(item => item.node.childImageSharp.fluid)
-
-  function getImage(name) {
-    const re = new RegExp(name)
-    return images.filter(img => (img.src.search(re) !== -1 ? img : null))
-  }
 
   const featureCardContainer =
     "flex justify-center w-full my-2 md:px-2 lg:my-4 lg:px-4 lg:w-full xl:w-1/2"
@@ -55,48 +51,48 @@ function IndexPage() {
         <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
           <div className={featureCardContainer}>
             <FeatureCard
-              src={getImage("web")}
+              src={getImage(images, "web")}
               alt={"Web development image"}
               title={"Web Development"}
               features={[
                 "Responsive, Mobile-first web development.",
                 "Fast, accessible and secure websites.",
-                "Built with the end user in mind."
+                "Built with the end user in mind.",
               ]}
             />
           </div>
           <div className={featureCardContainer}>
             <FeatureCard
-              src={getImage("app")}
+              src={getImage(images, "app")}
               alt={"Mobile app image"}
               title={"App Development"}
               features={[
                 "Progressive Web Applications.",
                 "Built using the Ionic Framework.",
-                "Modern, stylish and functional across devices."
+                "Modern, stylish and functional across devices.",
               ]}
             />
           </div>
           <div className={featureCardContainer}>
             <FeatureCard
-              src={getImage("api")}
+              src={getImage(images, "api")}
               alt={"API Image"}
               title={"API Development"}
               features={[
                 "Design, develop and deploy REST API's.",
                 "GraphQL and Apollo for declarative data fetching.",
-                "Database integration with MongoDB."
+                "Database integration with MongoDB.",
               ]}
             />
           </div>
           <div className={featureCardContainer}>
             <FeatureCard
-              src={getImage("ml")}
+              src={getImage(images, "ml")}
               alt={"Machine learning image"}
               title={"Applied Machine Learning"}
               features={[
                 "Classification and Regression models built with Python.",
-                "Applied data analysis using Weka."
+                "Applied data analysis using Weka.",
               ]}
             />
           </div>
