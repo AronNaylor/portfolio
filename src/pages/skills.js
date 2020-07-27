@@ -5,6 +5,7 @@ import SkillCard from "../components/skillCard"
 
 export default function Skills() {
   const skills = [
+    "Javascript",
     "React",
     "NodeJS",
     "Python",
