@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FeatureCard from "../components/featureCard"
@@ -7,20 +8,20 @@ import { getImage } from "../utils/getImage"
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { relativeDirectory: { eq: "index" } }) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+      query {
+          allFile(filter: { relativeDirectory: { eq: "index" } }) {
+              edges {
+                  node {
+                      base
+                      childImageSharp {
+                          fluid {
+                              ...GatsbyImageSharpFluid
+                          }
+                      }
+                  }
               }
-            }
           }
-        }
       }
-    }
   `)
 
   const images = data.allFile.edges.map(item => item.node.childImageSharp.fluid)
@@ -34,6 +35,13 @@ function IndexPage() {
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
         title="Home"
       />
+      <div className="w-full flex justify-center mb-10 lg:-mt-5">
+        <Img
+          fluid={getImage(images, "profile")}
+          style={{height: "12rem", width: "12rem"}}
+          className="rounded-full shadow-2xl"
+          />
+      </div>
       <div className="text-center xl:px-10 lg:px-10 md:px--2 sm:px-0">
         <p className="text-lg">
           I'm <b>Aron</b>, a Frontend developer from the UK. I served in the
@@ -57,7 +65,7 @@ function IndexPage() {
               features={[
                 "Responsive, Mobile-first web development.",
                 "Fast, accessible and secure websites.",
-                "Built with the end user in mind.",
+                "Built with the end user in mind."
               ]}
             />
           </div>
@@ -69,7 +77,7 @@ function IndexPage() {
               features={[
                 "Progressive Web Applications.",
                 "Built using the Ionic Framework.",
-                "Modern, stylish and functional across devices.",
+                "Modern, responsive and functional across devices."
               ]}
             />
           </div>
@@ -81,7 +89,7 @@ function IndexPage() {
               features={[
                 "Design, develop and deploy REST API's.",
                 "GraphQL and Apollo for declarative data fetching.",
-                "Database integration with MongoDB.",
+                "Database integration with MongoDB."
               ]}
             />
           </div>
@@ -92,7 +100,7 @@ function IndexPage() {
               title={"Applied Machine Learning"}
               features={[
                 "Classification and Regression models built with Python.",
-                "Applied data analysis using Weka.",
+                "Applied data analysis using Weka."
               ]}
             />
           </div>
