@@ -39,6 +39,17 @@ export default function Portfolio() {
       <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
         <div className={cardContainerStyles}>
           <PortfolioCard
+            src={getImage(images, "caths-blog")}
+            alt={"sunshinecray blog site"}
+            title={"www.sunshinecray.com"}
+            date={"08/08/2020"}
+            description={"A personal travel blog."}
+            skill={["GatsbyJS", "React", "Bootstrap", "Netlify"]}
+            link={"http://www.sunshinecray.com"}
+          />
+        </div>
+        <div className={cardContainerStyles}>
+          <PortfolioCard
             src={getImage(images, "portfolio")}
             alt={"Portfolio Image"}
             title={"Portfolio"}
