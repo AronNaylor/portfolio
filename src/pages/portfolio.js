@@ -41,7 +41,7 @@ export default function Portfolio() {
           <PortfolioCard
             src={getImage(images, "caths-blog")}
             alt={"sunshinecray blog site"}
-            title={"www.sunshinecray.com"}
+            title={"Travel Blog"}
             date={"08/08/2020"}
             description={"A personal travel blog."}
             skill={["GatsbyJS", "React", "Bootstrap", "Netlify"]}
@@ -133,7 +133,6 @@ export default function Portfolio() {
             }
           />
         </div>
-
         <div className={cardContainerStyles}>
           <PortfolioCard
             src={getImage(images, "typing")}

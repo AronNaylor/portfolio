@@ -8,7 +8,7 @@ export default function PortfolioCard(props) {
       <div className="w-full border border-gray-500 hover:shadow-2xl overflow-hidden min-h-full">
         <Img fluid={props.src} alt={props.alt} fadeIn={true} />
         <div className="px-2">
-          <div className="flex items-center justify-between leading-tight p-2 mt-2">
+          <div className="flex items-center flex-wrap justify-between leading-tight p-2 mt-2">
             <h1 className="text-lg font-semibold">{props.title}</h1>
             <p className="text-grey-darker">{props.date}</p>
           </div>
