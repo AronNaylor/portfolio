@@ -22,6 +22,8 @@ import gatsbyIcon from "@iconify/icons-logos/gatsby"
 import d3Icon from "@iconify/icons-logos/d3"
 import netlifyIcon from "@iconify/icons-logos/netlify"
 import herokuIcon from "@iconify/icons-logos/heroku"
+import contentfulIcon from "@iconify/icons-logos/contentful";
+import nextjsIcon from "@iconify/icons-logos/nextjs";
 
 export const iconTable = {
   React: reactIcon,
@@ -48,4 +50,6 @@ export const iconTable = {
   D3: d3Icon,
   Netlify: netlifyIcon,
   Heroku: herokuIcon,
+  Contentful: contentfulIcon,
+  NextJS: nextjsIcon
 }
