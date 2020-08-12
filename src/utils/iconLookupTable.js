@@ -24,6 +24,7 @@ import netlifyIcon from "@iconify/icons-logos/netlify"
 import herokuIcon from "@iconify/icons-logos/heroku"
 import contentfulIcon from "@iconify/icons-logos/contentful"
 import nextjsIcon from "@iconify/icons-logos/nextjs"
+import typescriptIcon from "@iconify/icons-logos/typescript-icon"
 
 export const iconTable = {
   React: reactIcon,
@@ -52,4 +53,5 @@ export const iconTable = {
   Heroku: herokuIcon,
   Contentful: contentfulIcon,
   NextJS: nextjsIcon,
+  Typescript: typescriptIcon,
 }

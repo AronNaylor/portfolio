@@ -20,7 +20,7 @@ export default function Skills() {
         <div className="flex flex-col flex-wrap items-center w-full h-full justify-center xl:px-10 lg:px-10 md:px--2 sm:px-0 xs:px-0">
           <SkillParentCard
             title={"Languages"}
-            skills={["Javascript", "Python", "HTML5", "CSS3"]}
+            skills={["Javascript", "Typescript", "Python", "HTML5", "CSS3"]}
           />
           <SkillParentCard
             title={"Frontend Libraries & Frameworks"}
