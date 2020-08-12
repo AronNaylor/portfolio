@@ -3,9 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// Set up with Netlify forms on deployment
-// https://www.gatsbyjs.org/docs/building-a-contact-form/
-
 function ContactPage() {
   const inputStyle =
     "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

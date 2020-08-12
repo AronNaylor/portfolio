@@ -3,7 +3,7 @@ import SkillCard from "./skillCard"
 
 function SkillParentCard(props) {
   return (
-    <div className="w-full md:w-1/2 flex flex-col rounded border border-gray-500 mb-5 mt-5">
+    <div className="w-full md:w-1/2 flex flex-col bg-white shadow-md rounded border-2 border-gray-200 py-4 mb-4">
       <div className="w-full flex flex-row justify-center items-center">
         <h1 className="font-bold text-xl pt-2 pl-5 underline">{props.title}</h1>
       </div>

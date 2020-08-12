@@ -27,7 +27,7 @@ export default function Skills() {
             <SkillParentCard title={"Languages"} skills={["Javascript", "Python", "HTML5", "CSS3"]}/>
             <SkillParentCard title={"Frontend Libraries & Frameworks"}
                              skills={["React", "GatsbyJS", "NextJS", "Ionic", "jQuery", "D3", "Sass", "Bootstrap", "Tailwind"]}/>
-            <SkillParentCard title={"Backend Libraries & Frameworks"} skills={["NodeJS", "ExpresssJS"]}/>
+            <SkillParentCard title={"Backend Libraries & Frameworks"} skills={["NodeJS", "ExpressJS"]}/>
             <SkillParentCard title={"Tools & Deployments"} skills={['Mocha', 'Jest', 'Git', 'NPM', 'Netlify', 'Heroku', 'Contentful']} />
             <SkillParentCard title={"Databases & APIs"} skills={['MongoDB', 'GraphQL', 'Apollo']} />
           </div>
