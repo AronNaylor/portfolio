@@ -72,6 +72,21 @@ export default function Portfolio() {
         </div>
         <div className={cardContainerStyles}>
           <PortfolioCard
+            src={getImage(images, "mlport")}
+            alt={"machine learning image"}
+            title={"Machine Learning - Breast Cancer"}
+            date={"7/07/2020"}
+            description={
+              "A neural network machine learning model to predict breast cancer recurrence."
+            }
+            link={
+              "https://colab.research.google.com/drive/1IjasOM7Wy22LFtBGry6N0Q84AhyT50Uh?usp=sharing"
+            }
+            skill={["Python"]}
+          />
+        </div>
+        <div className={cardContainerStyles}>
+          <PortfolioCard
             src={getImage(images, "placeholder")}
             alt={"Python Hangman"}
             title={"Python Hangman Game"}

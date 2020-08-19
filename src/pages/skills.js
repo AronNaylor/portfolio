@@ -5,8 +5,6 @@ import SEO from "../components/seo"
 import SkillParentCard from "../components/SkillParentCard"
 
 export default function Skills() {
-  const skills = ["Netlify", "Heroku", "Contentful"]
-
   return (
     <Layout>
       <SEO
