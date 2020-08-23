@@ -39,6 +39,17 @@ export default function Portfolio() {
       <div className="flex flex-wrap w-full h-auto md:px-2 lg:-mx-4">
         <div className={cardContainerStyles}>
           <PortfolioCard
+            src={getImage(images, "weatherapp")}
+            alt={"weather react native app"}
+            title={"Native Weather App"}
+            date={"23/08/2020"}
+            description={"A native weather app built with React Native."}
+            skill={["React", "CSS3"]}
+            link={"https://expo.io/@pegasus18/weather"}
+          />
+        </div>
+        <div className={cardContainerStyles}>
+          <PortfolioCard
             src={getImage(images, "caths-blog")}
             alt={"sunshinecray blog site"}
             title={"Travel Blog"}
