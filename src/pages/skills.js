@@ -16,6 +16,7 @@ export default function Skills() {
       </div>
       <div className="flex flex-col max-w-full h-full items-center">
         <div className="flex flex-col flex-wrap items-center w-full h-full justify-center xl:px-10 lg:px-10 md:px--2 sm:px-0 xs:px-0">
+          <SkillParentCard title={"Cloud"} skills={["AWS", "Heroku"]} />
           <SkillParentCard
             title={"Languages"}
             skills={["Javascript", "Typescript", "Python", "HTML5", "CSS3"]}
@@ -26,9 +27,6 @@ export default function Skills() {
               "React",
               "GatsbyJS",
               "NextJS",
-              "Ionic",
-              "jQuery",
-              "D3",
               "Sass",
               "Bootstrap",
               "Tailwind",
@@ -39,16 +37,8 @@ export default function Skills() {
             skills={["NodeJS", "ExpressJS"]}
           />
           <SkillParentCard
-            title={"Tools & Deployments"}
-            skills={[
-              "Mocha",
-              "Jest",
-              "Git",
-              "NPM",
-              "Netlify",
-              "Heroku",
-              "Contentful",
-            ]}
+            title={"Tools"}
+            skills={["Ansible", "Mocha", "Jest", "Git", "NPM"]}
           />
           <SkillParentCard
             title={"Databases & APIs"}

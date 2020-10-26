@@ -25,6 +25,10 @@ import herokuIcon from "@iconify/icons-logos/heroku"
 import contentfulIcon from "@iconify/icons-logos/contentful"
 import nextjsIcon from "@iconify/icons-logos/nextjs"
 import typescriptIcon from "@iconify/icons-logos/typescript-icon"
+import awsIcon from '@iconify/icons-logos/aws';
+import ansibleIcon from '@iconify/icons-logos/ansible';
+
+
 
 export const iconTable = {
   React: reactIcon,
@@ -54,4 +58,6 @@ export const iconTable = {
   Contentful: contentfulIcon,
   NextJS: nextjsIcon,
   Typescript: typescriptIcon,
+  AWS: awsIcon,
+  Ansible: ansibleIcon
 }
