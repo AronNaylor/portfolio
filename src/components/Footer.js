@@ -13,10 +13,12 @@ export default function Footer() {
     }
   `)
 
+  let currentYear = new Date().getFullYear()
+
   return (
     <footer className="flex flex-row justify-center pb-1 bg-blue-700 text-white">
       <p className="font-semibold">
-        {data.site.siteMetadata.author} &copy; {data.site.siteMetadata.date}{" "}
+        {data.site.siteMetadata.author} &copy; {currentYear}{" "}
       </p>
     </footer>
   )

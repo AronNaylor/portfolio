@@ -35,20 +35,12 @@ function IndexPage() {
         keywords={[`Aron`, `Naylor`, `web developer`, `frontend`]}
         title="Home"
       />
-      <div className="w-full flex justify-center mb-10 lg:-mt-5">
+      <div className="w-full flex justify-center mb-2 lg:-mt-5">
         <Img
           fluid={getImage(images, "profile")}
           style={{ height: "12rem", width: "12rem" }}
           className="rounded-full shadow-2xl"
         />
-      </div>
-      <div className="text-center xl:px-10 lg:px-10 md:px--2 sm:px-0">
-        <p className="text-lg">
-          I'm <b>Aron</b>, a Frontend developer from the UK. I served in the
-          Parachute Regiment for 8 years before leaving to become a software
-          developer. I enjoy building with the <b>MERN</b> Software Stack
-          (MongoDB, ExpressJS, ReactJS, NodeJs).
-        </p>
       </div>
       <div className="w-full h-auto flex flex-col justify-center items-center">
         <div className="w-full h-auto py-5">
